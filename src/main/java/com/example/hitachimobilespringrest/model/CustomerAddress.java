@@ -18,7 +18,7 @@ public class CustomerAddress {
     @Column(nullable = false)
     private String state;
 
-    private int stateNr;
+    private String stateNr;
 
     public Long getAddressId() {
         return addressId;
@@ -52,11 +52,11 @@ public class CustomerAddress {
         this.state = state;
     }
 
-    public int getStateNr() {
+    public String getStateNr() {
         return stateNr;
     }
 
-    public void setStateNr(int stateNr) {
+    public void setStateNr(String stateNr) {
         this.stateNr = stateNr;
     }
 }
